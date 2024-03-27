@@ -19,33 +19,33 @@ Trees, Binary Trees, Tree Map.
 Graphs. Practice.
 
 *********************Lambdas & Stream API************************************
-++Method Reference
-++Lambdas, Functional Interfaces
-++Existing Functional Interfaces in Java 8. Functions and Predicates.
-++Stream API: Stream, primitive Intermediate and Terminal operations.
-++Java Streams: Flat map.
-++Java Streams: Collectors and Custom Collectors.
+Method Reference
+Lambdas, Functional Interfaces
+Existing Functional Interfaces in Java 8. Functions and Predicates.
+Stream API: Stream, primitive Intermediate and Terminal operations.
+Java Streams: Flat map.
+Java Streams: Collectors and Custom Collectors.
 
 *********************Input and Output in Java.*********************
-++Introduction to Input and Output in Java
-++Reading/Writing of bytes.
-++Reading/Writing of strings.
+Introduction to Input and Output in Java
+Reading/Writing of bytes.
+Reading/Writing of strings.
 
 *********************************General and repetition***************************
-++Regular expressions. Basics. Regular Expressions, Java RegExp
-++Class String and its methods. Immutable. StringBuilder, StringBuffer, performance test.
-++Generics
-++Object.equals
-++Exceptions
-++Unit testing. JUnit.
+Regular expressions. Basics. Regular Expressions, Java RegExp
+Class String and its methods. Immutable. StringBuilder, StringBuffer, performance test.
+Generics
+Object.equals
+Exceptions
+Unit testing. JUnit.
 LocalDate, LocalDateTime, ZonedDateTime, exercises.
-++Annotations.
+Annotations.
 
 *************************Multithreading*************************************
-++General introduction to Java multithreading, main problems.
-++Thread, Runnable, Interrupted Exception
-++Synchronization. Mutex, Monitor.
-++Object.wait, Object.notify. Daemon threads
+General introduction to Java multithreading, main problems.
+Thread, Runnable, Interrupted Exception
+Synchronization. Mutex, Monitor.
+Object.wait, Object.notify. Daemon threads
 
 JavaUtilConcurrent. Concurrent Collections.One-element blocking queue (Messenger).
 Threads Executors.Atomic types.

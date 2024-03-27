@@ -26,7 +26,7 @@ class Ramiz {
     }
 
     public static void main(String[] args) {
-        Animal animal = new Animal();
+        Animal animal = new Wolf();
         HomeAn homeAn = new HomeAn();
         Cat cat = new Cat();
 

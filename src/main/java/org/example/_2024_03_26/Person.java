@@ -27,7 +27,7 @@ public class Person {
 //    }
 }
 
-class Main extends Person{
+class Main extends Person {
 
 
 
