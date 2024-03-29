@@ -1,0 +1,56 @@
+Контекст проекта
+Создадим упрощенную систему для учета техники в офисе.
+Система будет включать в себя различные типы техники
+(например, ноутбуки, мониторы, принтеры и т.д.),
+каждый из которых обладает своим набором характеристик и функций.
+
+Описание классов:
+Базовый класс OfficeEquipment (Офисная техника) - общий класс для всей техники.
+Поля: id, modelName (модель), manufacturer (производитель),
+yearOfManufacture (год выпуска), price, weight, isOperational (исправность).
+
+Класс Laptop (Ноутбук) - наследуется от OfficeEquipment.
+Дополнительные поля: processorType, ramSize, storageSize,
+batteryLife, screenSize, operatingSystem, isTouchscreen.
+
+Класс Monitor (Монитор) - наследуется от OfficeEquipment.
+Дополнительные поля: screenSize, resolution, panelType,
+refreshRate, isCurved, ports, isHDR.
+
+Класс Printer (Принтер) - наследуется от OfficeEquipment.
+Дополнительные поля: printTechnology, printSpeed, maxResolution,
+isColor, paperSize, connectivity, dutyCycle.
+
+Класс Scanner (Сканер) - наследуется от OfficeEquipment.
+Дополнительные поля: scanResolution, scanSpeed, colorDepth,
+maxPaperSize, connectivity, isDuplexScanning, scannerType.
+
+Класс Projector (Проектор) - наследуется от OfficeEquipment.
+Дополнительные поля: lumens, resolution, contrastRatio, lampLife,
+projectionSize, connectivity, is3DReady.
+
+Класс Tablet (Планшет) - наследуется от OfficeEquipment.
+Дополнительные поля: screenSize, storageSize, operatingSystem,
+batteryLife, isCellular, cameraResolution, processorType.
+
+Класс Phone (Телефон) - наследуется от OfficeEquipment.
+Дополнительные поля: screenSize, storageSize, operatingSystem,
+batteryLife, isSmart, cameraResolution, processorType.
+
+Класс Router (Маршрутизатор) - наследуется от OfficeEquipment.
+Дополнительные поля: speed, band, security, ports, range,
+isDualBand, connectivityType.
+
+Класс Switch (Коммутатор) - наследуется от OfficeEquipment.
+Дополнительные поля: portCount, speed, layer, managementType,
+powerOverEthernet, stackable, formFactor.
+
+Задание
+Создайте массив из 10 произвольных объектов, выбирая из вышеуказанных классов.
+Используйте Faker для генерации значений полей
+Реализуйте следующие методы которые принимают массив OfficeEquipment:
+printAllEquipment(OfficeEquipment[] officeEquipment) - выводит информацию о всей технике.
+calculateTotalPrice(OfficeEquipment[] officeEquipment) - вычисляет общую стоимость всей техники.
+listByManufacturer(OfficeEquipment[] officeEquipment, String manufacturer) - выводит всю технику указанного производителя.
+findOldestEquipment(OfficeEquipment[] officeEquipment, int year) - находит самую старую технику по году выпуска.
+countOperational(OfficeEquipment[] officeEquipment) - подсчитывает количество исправной техники.
