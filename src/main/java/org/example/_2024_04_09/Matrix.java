@@ -3,12 +3,11 @@ package org.example._2024_04_09;
 public class Matrix {
 
     //todo
-
     /**
      *
      * @param matrix матрица в которой все числа отсортированы справа налево и сверху вниз
      * @param number число которое ищем
-     * @return
+     * @return true - если число есть матрице
      */
     public boolean isConsistNumber(int[][] matrix, int number) {
         return true;
