@@ -1,6 +1,7 @@
 package org.example.testetst.taski;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.ToString;
 
 public class Main {
@@ -23,6 +24,7 @@ class Rectangle extends Figure {
 }
 
 @ToString
+@Getter
 @AllArgsConstructor
 class Triangle extends Figure {
     private Color color;
