@@ -11,6 +11,14 @@ import java.util.Map;
 
 public class Main {
 
+    public int fibRec(int index) {
+        if(index == 0) {
+            return 0;
+        }
+
+        return index == 1 ? 1 : fibRec(index - 1) + fibRec(index - 2);
+    }
+
    // Find circles with radius equal to any triangle side:
     public static Map<Circle, Triangle> findCirclesWithRadiusEqualToTriangleSide(List<Figure> figures) {
         Map<Circle, Triangle> result = new HashMap<>();
