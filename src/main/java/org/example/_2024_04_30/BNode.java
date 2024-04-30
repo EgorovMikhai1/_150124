@@ -77,10 +77,33 @@ public class BNode {
         return 0;
     }
 
+    private static BNode getChildOrNull(BNode BNode) {
+        return isNodeExist(BNode.left) ? BNode.left : BNode.right;
+    }
+
+    private static void moveNode(BNode toBNode, BNode fromBNode) {
+        toBNode.value = fromBNode.value;
+        toBNode.left = fromBNode.left;
+        toBNode.right = fromBNode.right;
+    }
+
+    //todo
+    private static void removeNodeWithOneOrZeroChild(BNode BNodeToDelete) {
+
+    }
+
+    //todo
+    private static boolean remove(BNode root, int value) {
+
+        return true;
+    }
+
 
     public static void main(String[] args) {
         Integer[] digit = {2, 5, 13, 6, 10, 14};
         BNode bNode = new BNode();
         createNode(bNode, 9);
     }
+
+
 }
