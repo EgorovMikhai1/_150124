@@ -94,7 +94,6 @@ public class BNode {
 
     //todo
     private static boolean remove(BNode root, int value) {
-
         return true;
     }
 
