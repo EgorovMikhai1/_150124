@@ -6,7 +6,6 @@ import com.github.javafaker.Faker;
 public abstract class Device extends Cat {
 
 
-
     String name;
 
     protected Device(Faker faker) {
