@@ -33,7 +33,7 @@ public class StackQueueExercises {
         sortStack(stack);
         System.out.println("Sorted Stack: " + stack);
 
-        // Задача 4: Первый неповторяющийся символ в потоке.
+        // Задача 4: Первый неповторяющийся символ.
         String stream = "geeksforgeeks";
         firstNonRepeating(stream);
 
@@ -62,7 +62,7 @@ public class StackQueueExercises {
 
     }
 
-    // Задача 4: Первый неповторяющийся символ в потоке.
+    // Задача 4: Первый неповторяющийся символ.
     public static void firstNonRepeating(String stream) {
 //        int[] charCount = new int[26];
 //        Queue<Character> queue = new LinkedList<>();
