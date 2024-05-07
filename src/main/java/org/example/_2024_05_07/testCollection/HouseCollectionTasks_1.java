@@ -19,14 +19,14 @@ public class HouseCollectionTasks_1 {
     }
 
     // Задание 3: Вернуть карту, ключами которой являются номера этажей, а значениями - количество квартир на этом этаже (Map)
-    public static Map<Integer, Integer> getFlatsCountByFloor(List<House> houses) {
+    public static Map<Integer, Integer> getFlatsCountByFloor(House houses) {
         Map<Integer, Integer> floorMap = new HashMap<>();
 
         return floorMap;
     }
 
     // Задание 4: Используя очередь, вернуть список номеров квартир в порядке, в котором они появляются, начиная с первого подъезда (Queue)
-    public static List<Integer> getFlatNumbersInOrder(List<House> houses) {
+    public static List<Integer> getFlatNumbersInOrder(House houses) {
         Queue<Integer> queue = new LinkedList<>();
         List<Integer> orderedFlatNumbers = new ArrayList<>();
 
@@ -34,7 +34,7 @@ public class HouseCollectionTasks_1 {
     }
 
     // Задание 5: Используя стек, вернуть список всех квартир в обратном порядке от последнего дома к первому (Stack)
-    public static List<Flat> getFlatsInReverseOrder(List<House> houses) {
+    public static List<Flat> getFlatsInReverseOrder(House houses) {
         Stack<Flat> stack = new Stack<>();
         List<Flat> reversedFlats = new ArrayList<>();
 
@@ -46,8 +46,8 @@ public class HouseCollectionTasks_1 {
 
         System.out.println("Все квартиры: " + getAllFlats(houses).size());
         System.out.println("Уникальные цвета комнат: " + getUniqueRoomColors(houses).size());
-        System.out.println("Квартиры по этажам: " + getFlatsCountByFloor(houses));
-        System.out.println("Номера квартир по порядку: " + getFlatNumbersInOrder(houses));
-        System.out.println("Квартиры в обратном порядке: " + getFlatsInReverseOrder(houses));
+        System.out.println("Квартиры по этажам: " + getFlatsCountByFloor(houses.get(0)));
+        System.out.println("Номера квартир по порядку: " + getFlatNumbersInOrder(houses.get(0)));
+        System.out.println("Квартиры в обратном порядке: " + getFlatsInReverseOrder(houses.get(0)));
     }
 }

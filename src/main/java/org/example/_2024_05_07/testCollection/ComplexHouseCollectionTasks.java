@@ -21,7 +21,7 @@ public class ComplexHouseCollectionTasks {
         return count;
     }
 
-    // Задание 3: Вернуть среднюю высоту дверных проемов всех комнат (List)
+    // Задание 3: Вернуть среднюю высоту дверных проемов всех комнат во всех домах (List)
     public static double getAverageDoorwayHeight(List<House> houses) {
         double totalHeight = 0;
         int count = 0;
