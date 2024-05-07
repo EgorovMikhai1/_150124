@@ -41,6 +41,7 @@ class Main11 {
         stackV.push(21);
         stackV.push(32);
 
+
         System.out.println(stackV);
 
         System.out.println(stackV.pop());

@@ -3,19 +3,22 @@
 ++Fields and methods of a Class. Modifier 'static' and 'final'.
 ++Inheritance. Abstract classes. Polymorphism
 ++Enums in Java
-Understanding reference type. Reference Data Types in Java
+++Understanding reference type. Reference Data Types in Java
 
 ***************JCF. Java Collection************************
-Working with Arrays in Java. Binary search. Sort.
-Data structures definition. Interfaces.
-Data structure 'List'. ArraysList implementation, beginning.
-Iterators and Iterable. Foreach syntax.
-List's implementations. LinkedList.
-Java Set implementation. HashSet. Exercises.
-Comparing objects in Java. Comparator, Comparable. Method sort.
-Data structures 'Queue', 'Stack'. Custom ArrayDeque implementation.
-Data structure 'Map'. Object.hashCode, HashMap implementation.
-Trees, Binary Trees, Tree Map.
+++Working with Arrays in Java. Binary search. Sort.
+++Data structures definition. Interfaces.
+++Data structure 'List'. ArraysList implementation, beginning.
+++Iterators and Iterable. Foreach syntax.
+++List's implementations. LinkedList.
+++Java Set implementation. HashSet. Exercises.
+++Comparing objects in Java. Comparator, Comparable. Method sort.
+++Data structures 'Queue', 'Stack'. Custom ArrayDeque implementation.
+++Data structure 'Map'. Object.hashCode, HashMap implementation.
+++Trees, Binary Trees, Tree Map.
+
+
+Generics
 Graphs. Practice.
 
 *********************Lambdas & Stream API************************************
@@ -34,8 +37,7 @@ Reading/Writing of strings.
 *********************************General and repetition***************************
 Regular expressions. Basics. Regular Expressions, Java RegExp
 Class String and its methods. Immutable. StringBuilder, StringBuffer, performance test.
-Generics
-Object.equals
+++Object.equals
 Exceptions
 Unit testing. JUnit.
 LocalDate, LocalDateTime, ZonedDateTime, exercises.
@@ -46,7 +48,6 @@ General introduction to Java multithreading, main problems.
 Thread, Runnable, Interrupted Exception
 Synchronization. Mutex, Monitor.
 Object.wait, Object.notify. Daemon threads
-
 JavaUtilConcurrent. Concurrent Collections.One-element blocking queue (Messenger).
 Threads Executors.Atomic types.
 
