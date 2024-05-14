@@ -6,6 +6,11 @@ public class HouseCollectionTasks_1 {
     
     // Задание 1: Вернуть список всех квартир во всех домах (List)
     public static List<Flat> getAllFlats(List<House> houses) {
+        if(houses.isEmpty()) {
+            throw new EmptyDataException(ErrorMessage.LIST_MUST_BE_NOT_NULL);
+        }
+
+
         List<Flat> allFlats = new ArrayList<>();
 
         return allFlats;
@@ -50,4 +55,14 @@ public class HouseCollectionTasks_1 {
         System.out.println("Номера квартир по порядку: " + getFlatNumbersInOrder(houses.get(0)));
         System.out.println("Квартиры в обратном порядке: " + getFlatsInReverseOrder(houses.get(0)));
     }
+}
+
+class EmptyDataException extends RuntimeException {
+    public EmptyDataException(String message) {
+        super(message);
+    }
+}
+
+class ErrorMessage {
+    public static final String LIST_MUST_BE_NOT_NULL = "LIST_MUST_BE_NOT_NULL";
 }
