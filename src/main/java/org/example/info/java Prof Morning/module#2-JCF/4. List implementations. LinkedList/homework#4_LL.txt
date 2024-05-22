@@ -1,2 +1,0 @@
-Изменить myLinkedList на двусвязный
-Изменить интерфейс с Iterator на ListIterator
