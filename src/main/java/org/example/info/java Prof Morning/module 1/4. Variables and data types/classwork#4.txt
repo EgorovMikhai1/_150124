@@ -1,0 +1,206 @@
+---
+РАСШИРЕНИЕ
+
+    public static void main(String[] args)
+    {
+        int i = 100;
+ 
+        // Automatic type conversion
+        // Integer to long type
+        long l = i;
+ 
+        // Automatic type conversion
+        // long to float type
+        float f = l;
+ 
+        // Print and display commands
+        System.out.println("Int value " + i);
+        System.out.println("Long value " + l);
+        System.out.println("Float value " + f);
+    }
+
+---
+СУЖЕНИЕ
+
+int a = 5;
+byte b = (byte) a;
+System.out.println(b);      // 5
+
+int a = 258;
+byte b = (byte) a;
+System.out.println(b);      // 2
+
+КАК ПРОИСХОДИТ УСЕЧЕНИЕ
+Число a, которое равно 258, в двоичном системе будет равно 00000000 00000000 00000001 00000010. 
+Значения типа byte занимают в памяти только 8 бит. 
+Поэтому двоичное представление числа int усекается до 8 правых разрядов, то есть 00000010, что в десятичной системе дает число 2.
+
+double a = 56.9898;
+int b = (int)a;
+Здесь значение числа b будет равно 56, несмотря на то, что число 57 было бы ближе к 56.9898. Чтобы избежать подобных казусов, надо применять функцию округления, которая есть в математической библиотеке Java:
+
+double a = 56.9898;
+int b = (int)Math.round(a);
+
+
+Примеры преобразований:
+int a = 3;
+double b = 4.6;
+double c = a+b;
+Так как в операции участвует значение типа double, то и другое значение приводится к типу double и сумма двух значений a+b будет представлять тип double.
+
+Другой пример:
+byte a = 3;
+short b = 4;
+byte c = (byte)(a+b);
+Две переменных типа byte и short (не double, float или long), поэтому при сложении они преобразуются к типу int, и их сумма a+b представляет значение типа int. 
+
+Если в операциях участвуют данные типа char, то они преобразуются в int:
+int d = 'a' + 5;
+System.out.println(d);  // 102
+
+
+CHAR -> INT
+// Using ASCII value
+
+class CharPractice {
+ 
+    // Main driver method
+    public static void main(String[] args)
+    {
+        // Initializing a character
+        char ch = '3';
+ 
+        // Printing the character value
+        System.out.println("char value: " + ch);
+ 
+        // Converting character to its integer value
+        int a = ch - '0';
+ 
+        // Printing the integer value
+        System.out.println("int value: " + a);
+    }
+}
+
+// Using valueOf() method of String Class
+ 
+class CharPractice {
+ 
+    // Main driver method
+    public static void main(String[] args)
+    {
+ 
+        // Declaring and initializing a character
+        char ch = '3';
+ 
+        // Printing the character value
+        System.out.println("char value: " + ch);
+ 
+        // Converting the character to it's integer value
+        // using valueOf() method
+        int a = Integer.parseInt(String.valueOf(ch));
+ 
+        // Printing the integral value
+        // corresponding to its character value
+        System.out.println("int value: " + a);
+    }
+}
+
+// Using getNumericValue() method of Character Class
+ 
+class CharPractice {
+ 
+    // Main driver method
+    public static void main(String[] args)
+    {
+ 
+        // Declaring and initializing a character
+        char ch = '3';
+ 
+        // Displaying above character on console
+        System.out.println("char value: " + ch);
+ 
+        // Converting the Character to it's int value
+        // using getNumericValue() method of Character Class
+        int a = Character.getNumericValue(ch);
+ 
+        // Printing the corresponding integral value
+        System.out.println("int value: " + a);
+    }
+}
+
+
+ССЫЛОЧНЫЕ И ПРИМИТИВЫ
+
+new DEMO()
+
+Demo@214c265e тип Demo и ее шестнадцатеричный формат хэш-код 214c265e.
+
+
+пул констант String
+
+public static void main(String ar[])
+    {
+        System.out.println("PRIMITIVE DATA TYPES\n");
+        int x = 10;
+        int y = x;
+        System.out.print("Initially: ");
+        System.out.println("x = " + x + ", y = " + y);
+ 
+        // Here the change in the value of y
+        // will not affect the value of x
+        y = 30;
+ 
+        System.out.print("After changing y to 30: ");
+        System.out.println("x = " + x + ", y = " + y);
+        System.out.println(
+            "**Only value of y is affected here "
+            + "because of Primitive Data Type\n");
+ 
+        System.out.println("REFERENCE DATA TYPES\n");
+        int[] c = { 10, 20, 30, 40 };
+ 
+        // Here complete reference of c is copied to d
+        // and both point to same memory in Heap
+        int[] d = c;
+ 
+        System.out.println("Initially");
+        System.out.println("Array c: "
+                           + Arrays.toString(c));
+        System.out.println("Array d: "
+                           + Arrays.toString(d));
+ 
+        // Modifying the value at
+        // index 1 to 50 in array d
+        System.out.println("\nModifying the value at "
+                           + "index 1 to 50 in array d\n");
+        d[1] = 50;
+ 
+        System.out.println("After modification");
+        System.out.println("Array c: "
+                           + Arrays.toString(c));
+        System.out.println("Array d: "
+                           + Arrays.toString(d));
+        System.out.println(
+            "**Here value of c[1] is also affected "
+            + "because of Reference Data Type\n");
+    }
+
+
+Метод substring() класса Java String
+
+public static void main(String args[]){  
+String s1="telran";  
+System.out.println(s1.substring(2,4));//returns va  
+System.out.println(s1.substring(2));//returns vatpoint  
+}}  
+
+
+ public static void main(String[] args) {  
+        String s1="Telran";    
+        String substr = s1.substring(0); // Starts with 0 and goes to end  
+        System.out.println(substr);  
+        String substr2 = s1.substring(3,6); // Starts from 3 and goes to 6  
+        System.out.println(substr2);    
+        String substr3 = s1.substring(5,15); // Returns Exception  
+    }  
