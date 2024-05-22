@@ -1,4 +1,4 @@
-package org.example.info.ex3; /**
+package org.example.info.stream_Info.ex3; /**
  * Метод: unordered()
  * Назначение: Указывает, что порядок элементов после операции не имеет значения.
  */

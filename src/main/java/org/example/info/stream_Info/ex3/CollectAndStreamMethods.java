@@ -1,4 +1,4 @@
-package org.example.info.ex3;
+package org.example.info.stream_Info.ex3;
 
 import java.util.Arrays;
 import java.util.List;

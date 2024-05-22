@@ -1,4 +1,4 @@
-package org.example.info;
+package org.example.info.stream_Info;
 
 import java.util.Arrays;
 import java.util.List;
