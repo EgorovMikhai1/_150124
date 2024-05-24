@@ -72,7 +72,12 @@ package org.example.STREAM.taski.taski1;//package PROF.streams.streams.taski1;
 //    //Задание 7:Преобразование списка объектов класса в список их имен, отсортированных по возрасту
 //    private static void m7() {
 //        List<Person> people = Arrays.asList(new Person("John", 25), new Person("Alice", 22), new Person("Bob", 30));
-//        List<String> names =
+//        List<String> names = people.stream().sorted(new Comparator() {
+
+
+
+
+//        }).flatMap(el -> el.getName().stream())!!
 //        System.out.println(names); // [Alice, John, Bob]
 //    }
 //

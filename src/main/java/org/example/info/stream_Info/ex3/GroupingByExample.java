@@ -8,9 +8,11 @@ import java.util.stream.Collectors;
 
 public class GroupingByExample {
     public static void main(String[] args) {
-        // Пример 1.txt: Группировка списка целых чисел по остатку от деления на 3
+        // Пример 1: Группировка списка целых чисел по остатку от деления на 3
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-        Map<Integer, List<Integer>> groups = numbers.stream()
+
+        Map<Integer, List<Integer>> groups =
+                numbers.stream()
                 .collect(Collectors.groupingBy(n -> n % 3));
         System.out.println(groups);
 
