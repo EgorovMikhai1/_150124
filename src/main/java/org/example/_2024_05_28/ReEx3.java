@@ -1,7 +1,5 @@
 package org.example._2024_05_28;
 
-import lombok.AllArgsConstructor;
-
 public class ReEx3 {
     public void info(Info info) {
         System.out.printf("%02 \t %-5s \t %-5s \t %,.1f",

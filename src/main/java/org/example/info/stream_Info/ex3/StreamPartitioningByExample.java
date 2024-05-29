@@ -19,7 +19,8 @@ public class StreamPartitioningByExample {
                 .collect(Collectors.partitioningBy(num -> num % 2 == 0));
 
         // Выводим результат
-        System.out.println("Пример 1.txt: Разделение чисел на четные и нечетные:");
+        System.out.println("Пример 1: Разделение чисел на четные и нечетные:");
+        System.out.println("MAP: " + evenOddPartition);
         System.out.println("Четные числа: " + evenOddPartition.get(true));
         System.out.println("Нечетные числа: " + evenOddPartition.get(false));
         System.out.println();
