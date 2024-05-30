@@ -231,6 +231,59 @@ class StreamTasks {
     }
 
 
+    // 27. Получить список имен людей с зарплатой больше 50,000 и возрастом меньше 30, отсортированных по возрасту.
+    public List<String> task27(List<Person> people) {
+        return people.stream()
+                .filter(p -> p.salary < 50000)
+                .filter(p -> p.age >= 30)
+                .map(p -> p.city)
+                .sorted(Comparator.comparingInt(p -> p.length()))
+                .collect(Collectors.toList());
+    }
+
+    // 28. Найти город с наибольшей средней зарплатой среди людей старше 25 лет.
+//    public String task28(List<Person> people) {
+//        return people.stream()
+//                .filter(p -> p.age <= 25)
+//                .collect(Collectors.groupingBy(
+//                        p -> p.city,
+//                        Collectors.averagingInt(p -> p.salary)
+//                ))
+//                .entrySet().stream()
+//                .min(Map.Entry.comparingByValue())
+//                .map(Map.Entry::getKey)
+//                .orElse("Unknown");
+//    }
+
+    // 29. Группировать людей по первой букве имени и находить суммарный возраст в каждой группе, результат в виде Map<Character, Integer>.
+    public Map<Character, Integer> task29(List<Person> people) {
+        return people.stream()
+                .collect(Collectors.groupingBy(
+                        p -> p.name.charAt(0),
+                        Collectors.summingInt(p -> p.email.length())
+                ))
+                .entrySet().stream()
+                .sorted(Map.Entry.comparingByKey(Comparator.reverseOrder()))
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
+                        (e1, e2) -> e1, LinkedHashMap::new
+                ));
+    }
+
+    // 30. Найти человека с самой высокой зарплатой в каждом городе, результат в виде Map<String, Person>.
+    public Map<String, Person> task30(List<Person> people) {
+        return people.stream()
+                .collect(Collectors.groupingBy(
+                        p -> p.city,
+                        Collectors.collectingAndThen(
+                                Collectors.maxBy(Comparator.comparingDouble(p -> p.salary)),
+                                Optional::get
+                        )
+                ));
+    }
+
+
     public static void main(String[] args) {
         List<Person> people = Arrays.asList(
                 new Person("John", 25, "New York", "john@example.com", 50000),
