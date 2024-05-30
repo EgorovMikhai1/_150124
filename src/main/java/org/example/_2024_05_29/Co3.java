@@ -6,7 +6,6 @@ import lombok.ToString;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Co3 {
