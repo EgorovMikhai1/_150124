@@ -2,9 +2,7 @@ package org.example._2024_05_30;
 
 import lombok.Getter;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 class StreamTasks {
@@ -182,6 +180,56 @@ class StreamTasks {
                 .mapToInt(String::length)
                 .sum();
     }
+
+    // 21. Группировать людей по городу и находить максимальный возраст в каждой группе.
+    public Map<String, Optional<Integer>> task21(List<Person> people) {
+        return people.stream()
+                .collect(Collectors.groupingBy(
+                        p -> p.city,
+                        Collectors.mapping(
+                                p -> p.age,
+                                Collectors.maxBy(Integer::compareTo)
+                        )));
+    }
+
+    // 22. Получить список людей, у которых зарплата больше 50000, отсортированных по убыванию зарплаты.
+    public List<Person> task22(List<Person> people) {
+        return people.stream()
+                .filter(p -> p.salary > 50000)
+                .sorted(Comparator.comparingDouble(p -> p.salary))
+                .distinct()
+                .collect(Collectors.toList());
+    }
+
+    // 23. Найти город с наибольшим количеством людей старше 30 лет.
+    public String task23(List<Person> people) {
+        return people.stream()
+                .filter(p -> p.age > 30)
+                .collect(Collectors.groupingBy(
+                        p -> p.city,
+                        Collectors.counting()))
+                .entrySet().stream()
+                .max(Map.Entry.comparingByValue())
+                .map(Map.Entry::getKey)
+                .orElse("");
+    }
+
+    // 24. Группировать людей по первой букве имени и находить среднюю зарплату в каждой группе.
+    public Map<Character, Double> task24(List<Person> people) {
+        return people.stream()
+                .collect(Collectors.groupingBy(
+                        p -> p.name.charAt(0),
+                        Collectors.averagingInt(p -> (int) p.salary)));
+    }
+
+    // 25. Найти человека с самой длинной электронной почтой в каждом городе.
+    public Map<String, Optional<Person>> task25(List<Person> people) {
+        return people.stream()
+                .collect(Collectors.groupingBy(
+                        p -> p.city,
+                        Collectors.maxBy(Comparator.comparingInt(p -> p.email.length()))));
+    }
+
 
     public static void main(String[] args) {
         List<Person> people = Arrays.asList(
