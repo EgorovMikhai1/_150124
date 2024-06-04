@@ -1,5 +1,6 @@
 package org.example._2024_05_31;
 
+import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -18,6 +19,7 @@ public class IOEx {
 //        } catch (IOException e) {
 //            throw new RuntimeException(e);
 //        }
+
 
         try (FileWriter fileWriter = new FileWriter("write.txt", true)) {
             for (int i = 0; i < text.length(); i++) {
