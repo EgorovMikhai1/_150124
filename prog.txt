@@ -18,30 +18,33 @@
 ++Trees, Binary Trees, Tree Map.
 
 
-Generics
+++Generics
 Graphs. Practice.
 
 *********************Lambdas & Stream API************************************
-Method Reference
-Lambdas, Functional Interfaces
-Existing Functional Interfaces in Java 8. Functions and Predicates.
-Stream API: Stream, primitive Intermediate and Terminal operations.
-Java Streams: Flat map.
-Java Streams: Collectors and Custom Collectors.
+++Method Reference
+++Lambdas, Functional Interfaces
+++Existing Functional Interfaces in Java 8. Functions and Predicates.
+++Stream API: Stream, primitive Intermediate and Terminal operations.
+++Java Streams: Flat map.
+++Java Streams: Collectors and Custom Collectors.
 
 *********************Input and Output in Java.*********************
-Introduction to Input and Output in Java
-Reading/Writing of bytes.
-Reading/Writing of strings.
+++Introduction to Input and Output in Java
+++Reading/Writing of bytes.
+++Reading/Writing of strings.
 
 *********************************General and repetition***************************
-Regular expressions. Basics. Regular Expressions, Java RegExp
-Class String and its methods. Immutable. StringBuilder, StringBuffer, performance test.
+++Regular expressions. Basics. Regular Expressions, Java RegExp
+++Class String and its methods. Immutable. StringBuilder, StringBuffer, performance test.
 ++Object.equals
-Exceptions
+++Exceptions
+Reflections.
+Annotations.
 Unit testing. JUnit.
 LocalDate, LocalDateTime, ZonedDateTime, exercises.
-Annotations.
+Принципы программирования: DRY, YAGNI, KISS,
+SOLID.
 
 *************************Multithreading*************************************
 General introduction to Java multithreading, main problems.
@@ -53,9 +56,6 @@ Threads Executors.Atomic types.
 
 **************************Spring & Spring Boot*********************************
 Apache Maven, сборка проектов.
-Принципы программирования: DRY, YAGNI, KISS,
-SOLID.
-Reflections.
 Spring Framework: Introduction, Context and Beans
 Spring Framework: Beans configuration
 Spring Boot: Onion (Hexagonal) architecture
