@@ -24,7 +24,7 @@ public class FileOperationExamples {
      * его содержимое в новый файл "copy_example.txt" с использованием FileOutputStream.
      */
     public static void copyFileUsingFileStreams() throws IOException {
-        File sourceFile = new File("example.txt");
+        File sourceFile = new File("222.txt");
         File destinationFile = new File("copy_example.txt");
     }
 
