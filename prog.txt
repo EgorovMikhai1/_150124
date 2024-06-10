@@ -41,7 +41,8 @@ Graphs. Practice.
 ++Exceptions
 Reflections.
 Annotations.
-Unit testing. JUnit.
+++Unit testing. JUnit. (return, void, paramTest+, mockito [mock, dummy, stub, spy], mockMVC)
+
 LocalDate, LocalDateTime, ZonedDateTime, exercises.
 Принципы программирования: DRY, YAGNI, KISS,
 SOLID.
