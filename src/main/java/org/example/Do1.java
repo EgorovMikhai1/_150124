@@ -1,12 +1,23 @@
 package org.example;
 
+import lombok.Getter;
+
 import java.util.HashMap;
 
 public class Do1 {
-    static String s ;
+
+    @Getter
+    private String s ;
 
     public static void main(String[] args) {
-        System.out.println(s.length());
+
         new HashMap<>();
+    }
+
+    @Override
+    public String toString() {
+        return "Do1{" +
+                "s='" + s + '\'' +
+                '}';
     }
 }
