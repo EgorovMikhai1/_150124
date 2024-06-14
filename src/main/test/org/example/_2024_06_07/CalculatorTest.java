@@ -3,7 +3,6 @@ package org.example._2024_06_07;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
