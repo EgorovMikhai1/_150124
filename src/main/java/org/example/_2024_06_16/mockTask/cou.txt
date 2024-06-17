@@ -1,0 +1,6 @@
+101,Math
+102,Physics
+103,Chemistry
+104,Biology
+105,History
+106,Computer Science

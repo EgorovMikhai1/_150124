@@ -1,0 +1,33 @@
+Методы для тестирования
+
+1. Метод registerStudent(Student student)
+Цель: Проверить, что метод registerStudent вызывает метод addStudent у StudentRepository.
+Параметры: String id, String name.
+
+2. Метод enrollStudentToCourse(String studentId, String courseId)
+Цель: Проверить, что метод enrollStudentToCourse вызывает метод enrollStudentToCourse у StudentRepository.
+Можно использовать параметризованный тест для проверки различных комбинаций студентов и курсов.
+Параметры: String studentId, String courseId, String courseName.
+
+3. Метод assignGrade(String studentId, String courseId, int grade)
+Цель: Проверить, что метод assignGrade вызывает метод updateGrade у StudentRepository.
+Можно использовать параметризованный тест для проверки различных комбинаций студентов, курсов и оценок.
+Параметры: String studentId, String courseId, int grade.
+
+4. Метод getStudentGrades(String studentId)
+Цель: Проверить, что метод getStudentGrades возвращает корректные данные.
+
+5. Метод calculateAverageGrade(String studentId)
+Цель: Проверить, что метод calculateAverageGrade возвращает корректное среднее значение оценок студента.
+
+6. Метод getStudentsWithGradesAbove(int grade)
+Цель: Проверить, что метод getStudentsWithGradesAbove возвращает список студентов с оценками выше указанного значения.
+
+7. Метод getTopPerformingStudents(int n)
+Цель: Проверить, что метод getTopPerformingStudents возвращает список топ студентов по средним оценкам.
+
+8. Метод loadStudentsFromFile(String filePath)
+Цель: Проверить, что метод loadStudentsFromFile вызывает метод loadStudentsFromFile у StudentRepository.
+
+9. Метод loadCoursesFromFile(String filePath)
+Цель: Проверить, что метод loadCoursesFromFile вызывает метод loadCoursesFromFile у StudentRepository.

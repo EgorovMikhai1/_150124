@@ -10,12 +10,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-
 import java.util.HashMap;
 import java.util.Map;
-
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 @AllArgsConstructor
 @Getter
@@ -78,6 +74,14 @@ class OrderService {
 @ExtendWith(MockitoExtension.class)
 class OrderServiceTest {
 
+    @Mock
+    PurchaseOrder order;
+
+    @InjectMocks
+    OrderService orderService;
+
+    @Mock
+    private OrderRepository orderRepository;
 
     @BeforeEach
     void setUp() {
