@@ -19,6 +19,7 @@
 
 
 ++Generics
+
 Graphs. Practice.
 
 *********************Lambdas & Stream API************************************
@@ -39,13 +40,13 @@ Graphs. Practice.
 ++Class String and its methods. Immutable. StringBuilder, StringBuffer, performance test.
 ++Object.equals
 ++Exceptions
-Reflections.
-Annotations.
+++Reflections.
+++Annotations.
 ++Unit testing. JUnit. (return, void, paramTest+, mockito [mock, dummy, stub, spy], mockMVC)
 
 LocalDate, LocalDateTime, ZonedDateTime, exercises.
-Принципы программирования: DRY, YAGNI, KISS,
-SOLID.
+
+Принципы программирования: DRY, YAGNI, KISS, SOLID.
 
 *************************Multithreading*************************************
 General introduction to Java multithreading, main problems.
