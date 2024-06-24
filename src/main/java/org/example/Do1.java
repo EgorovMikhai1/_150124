@@ -2,7 +2,9 @@ package org.example;
 
 import lombok.Getter;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 
 public class Do1 {
@@ -20,5 +22,23 @@ public class Do1 {
         return "Do1{" +
                 "s='" + s + '\'' +
                 '}';
+    }
+}
+
+class Car {
+    List<Passengers> list;
+
+    public Car() {
+        list = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            System.out.println("**********");
+        }
+    }
+}
+
+class Passengers {
+    public static void main(String[] args) {
+        Car car = new Car();
+        System.out.println(car.list.size());
     }
 }
