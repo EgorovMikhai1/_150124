@@ -29,7 +29,5 @@ public class Vol extends Thread {
         v.join();
 
         System.out.println("MAIN FINISHED");
-
-
     }
 }
