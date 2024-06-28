@@ -46,23 +46,25 @@ Graphs. Practice.
 
 LocalDate, LocalDateTime, ZonedDateTime, exercises.
 
-Принципы программирования: DRY, YAGNI, KISS, SOLID.
+++Принципы программирования: DRY, YAGNI, KISS, SOLID.
 
 *************************Multithreading*************************************
-General introduction to Java multithreading, main problems.
-Thread, Runnable, Interrupted Exception
-Synchronization. Mutex, Monitor.
-Object.wait, Object.notify. Daemon threads
+++General introduction to Java multithreading, main problems.
+++Thread, Runnable, Interrupted Exception
+++Synchronization. Mutex, Monitor.
+++Object.wait, Object.notify. Daemon threads
 JavaUtilConcurrent. Concurrent Collections.One-element blocking queue (Messenger).
 Threads Executors.Atomic types.
 
 **************************Spring & Spring Boot*********************************
+Java JDBC API, работа с базами данных
+
+
 Apache Maven, сборка проектов.
 Spring Framework: Introduction, Context and Beans
 Spring Framework: Beans configuration
 Spring Boot: Onion (Hexagonal) architecture
 Spring Boot: Implementing Rest Controllers
-Java JDBC API, работа с базами данных
 Spring Boot: JPA and databases
 Spring Boot: validation
 Spring Boot: logging and AOP basics
