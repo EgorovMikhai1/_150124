@@ -27,6 +27,7 @@ class P1 extends Thread {
 
     private String name;
     private Semaphore semaphore;
+    private int counter = 0;
 
     public P1(String name, Semaphore semaphore) {
         this.name = name;
@@ -34,19 +35,26 @@ class P1 extends Thread {
         this.start();
     }
 
+    public synchronized void increase() {
+        counter++;
+    }
+
     @Override
     public void run() {
-
+//50
         try {
             System.out.println(name + ": is waiting for .... ... .. .  .   .");
             semaphore.acquire();
+//++
             System.out.println(name + ": is using the callBox");
             sleep(2345);
+//10
             System.out.println(name + ": stop to use");
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
             semaphore.release();
+//--
         }
     }
 }
