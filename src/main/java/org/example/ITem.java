@@ -7,6 +7,9 @@ public class ITem implements Comparable<ITem> {
     String name;
     private static String param = null;
 
+//    public ITem(String name) {
+//
+//    }
 
     @Override
     public int compareTo(ITem o) {
@@ -48,5 +51,9 @@ public class ITem implements Comparable<ITem> {
 
     public static void main(String[] args) {
         new Object().equals(new ITem());
+
+        String name = "QQQ";
+
+        name = "WWW";
     }
 }
