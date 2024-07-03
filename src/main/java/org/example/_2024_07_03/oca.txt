@@ -1,0 +1,322 @@
+Каков результат выполнения следующего класса? (Выберите все, что применимо)
+1: public class _C {
+2:  private static int $;
+3:  public static void main(String[] main) {
+4:    String a_b;
+5:    System.out.print($);
+6:    System.out.print(a_b);
+7:  } }
+A. Ошибка компиляции в строке 1.
+B. Ошибка компиляции в строке 2.
+C. Ошибка компиляции в строке 4.
+D. Ошибка компиляции в строке 5.
+E. Ошибка компиляции в строке 6.
+F. 0null
+G. nullnull
+
+Каков результат выполнения следующего кода?
+String s1 = "Java";
+String s2 = "Java";
+StringBuilder sb1 = new StringBuilder();
+sb1.append("Ja").append("va");
+System.out.println(s1 == s2);
+System.out.println(s1.equals(s2));
+System.out.println(sb1.toString() == s1);
+System.out.println(sb1.toString().equals(s1));
+A. true напечатано ровно один раз.
+B. true напечатано ровно два раза.
+C. true напечатано ровно три раза.
+D. true напечатано ровно четыре раза.
+E. Код не компилируется.
+
+Каков результат выполнения следующего кода? (Выберите все, что применимо)
+1: interface HasTail { int getTailLength(); }
+2: abstract class Puma implements HasTail {
+3:   protected int getTailLength() {return 4;}
+4: }
+5: public class Cougar extends Puma {
+6:    public static void main(String[] args) {
+7:      Puma puma = new Puma();
+8:      System.out.println(puma.getTailLength());
+9:    }
+10:
+11:  public int getTailLength(int length) {return 2;}
+12: }
+A. 2
+B. 4
+C. Код не компилируется из-за строки 3.
+D. Код не компилируется из-за строки 5.
+E. Код не компилируется из-за строки 7.
+F. Код не компилируется из-за строки 11.
+G. Невозможно определить результат из предоставленного кода.
+
+Каков результат выполнения следующей программы?
+1: public class FeedingSchedule {
+2:  public static void main(String[] args) {
+3:    boolean keepGoing = true;
+4:    int count = 0;
+5:    int x = 3;
+6:    while(count++ < 3) {
+7:      int y = (1 + 2 * count) % 3;
+8:      switch(y) {
+9:         default:
+10:         case 0: x -= 1; break;
+11:         case 1: x += 5;
+12:      }
+13:    }
+14:  System.out.println(x);
+15: } }
+A. 4
+B. 5
+C. 6
+D. 7
+E. 13
+F. Код не компилируется из-за строки 7.
+
+Каков результат выполнения следующего фрагмента кода?
+
+13: System.out.print("a");
+14: try {
+15:   System.out.print("b");
+16:   throw new IllegalArgumentException();
+17: } catch (RuntimeException e) {
+18:   System.out.print("c");
+19: } finally {
+20:   System.out.print("d");
+21: }
+22: System.out.print("e");
+A. abe
+B. abce
+C. abde
+D. abcde
+E. Код не компилируется.
+F. Возбуждается неперехваченное исключение.
+
+Каков результат выполнения следующей программы?
+1: public class MathFunctions {
+2:   public static void addToInt(int x, int amountToAdd) {
+3:     x = x + amountToAdd;
+4:   }
+5:   public static void main(String[] args) {
+6:     int a = 15;
+7:     int b = 10;
+8:     MathFunctions.addToInt(a, b);
+9:     System.out.println(a);   } }
+A. 10
+B. 15
+C. 25
+D. Ошибка компиляции в строке 3.
+E. Ошибка компиляции в строке 8.
+F. Ничего из вышеперечисленного.
+
+Каков результат выполнения следующего кода?
+int[] array = {6,9,8};
+List<Integer> list = new ArrayList<>();
+list.add(array[0]);
+list.add(array[2]);
+list.set(1, array[1]);
+list.remove(0);
+System.out.println(list);
+A. [8]
+B. [9]
+C. Что-то вроде [Ljava.lang.String;@160bc7c0
+D. Возбуждается исключение.
+E. Код не компилируется.
+
+Каков результат выполнения следующего кода?
+1: public class Deer {
+2:  public Deer() { System.out.print("Deer"); }
+3:  public Deer(int age) { System.out.print("DeerAge"); }
+4:  private boolean hasHorns() { return false; }
+5:  public static void main(String[] args) {
+6:    Deer deer = new Reindeer(5);
+7:    System.out.println(","+deer.hasHorns());
+8:  }
+9: }
+10: class Reindeer extends Deer {
+11:  public Reindeer(int age) { System.out.print("Reindeer"); }
+12:  public boolean hasHorns() { return true; }
+13: }
+A. DeerReindeer,false
+B. DeerReindeer,true
+C. ReindeerDeer,false
+D. ReindeerDeer,true
+E. DeerAgeReindeer,false
+F. DeerAgeReindeer,true
+G. Код не компилируется из-за строки 7.
+H. Код не компилируется из-за строки 12.
+
+Какие из следующих утверждений верны? (Выберите все, что применимо)
+A. Проверяемые исключения предназначены для возбуждения JVM (а не программистом).
+B. Проверяемые исключения должны быть перехвачены или объявлены.
+C. Ошибки предназначены для возбуждения JVM (а не программистом).
+D. Ошибки должны быть перехвачены или объявлены.
+E. Исключения времени выполнения предназначены для возбуждения JVM (а не программистом).
+F. Исключения времени выполнения должны быть перехвачены или объявлены.
+
+Что верно для следующего кода? (Выберите все, что применимо)
+1:  import java.util.*;
+2:  public class Grasshopper {
+3:  public Grasshopper(String n) {
+4:     name = n;
+5:  }
+6:  public static void main(String[] args) {
+7:    Grasshopper one = new Grasshopper("g1");
+8:    Grasshopper two = new Grasshopper("g2");
+9:    one = two;
+10:   two = null;
+11:   one = null;
+12: }
+13:   private String name; }
+A. Сразу после строки 9 ни один объект grasshopper не подлежит сборке мусора.
+B. Сразу после строки 10 ни один объект grasshopper не подлежит сборке мусора.
+C. Сразу после строки 9 только один объект grasshopper подлежит сборке мусора.
+D. Сразу после строки 10 только один объект grasshopper подлежит сборке мусора.
+E. Сразу после строки 11 только один объект grasshopper подлежит сборке мусора.
+F. Код компилируется.
+G. Код не компилируется.
+
+Каков результат выполнения следующей программы?
+1: public class FeedingSchedule {
+2:  public static void main(String[] args) {
+3:    int x = 5, j = 0;
+4:    OUTER: for(int i=0; i<3; )
+5:      INNER: do {
+6:        i++; x++;
+7:        if(x > 10) break INNER;
+8:        x += 4;
+9:        j++;
+10:      } while(j <= 2);
+11:    System.out.println(x);
+12: } }
+A. 10
+B. 12
+C. 13
+D. 17
+E. Код не компилируется из-за строки 4.
+F. Код не компилируется из-за строки 6.
+
+Каков результат выполнения следующей программы?
+1: public class Egret {
+2:   private String color;
+3:   public Egret() {
+4:     this("white");
+5:   }
+6:   public Egret(String color) {
+7:     color = color;
+8:   }
+9:   public static void main(String[] args) {
+10:    Egret e = new Egret();
+11:    System.out.println("Color:" + e.color);
+12:   }
+13: }
+A. Color:
+B. Color
+
+C. Color
+
+D. Ошибка компиляции в строке 4.
+E. Ошибка компиляции в строке 10.
+F. Ошибка компиляции в строке 11.
+
+Каков результат выполнения следующей программы?
+1: public class BearOrShark {
+2:   public static void main(String[] args) {
+3:     int luck = 10;
+4:     if((luck>10 ? luck++: --luck)<10) {
+5:       System.out.print("Bear");
+6:     } if(luck<10) System.out.print("Shark");
+7: } }
+A. Bear
+B. Shark
+C. BearShark
+D. Код не компилируется из-за строки 4.
+E. Код не компилируется из-за строки 6.
+F. Код компилируется без ошибок, но не выводит ничего.
+
+Предполагая, что у нас есть допустимый, не равный null объект HenHouse,
+значение которого инициализируется пустой строкой, показанной здесь,
+какие из следующих вариантов возможны выводы этой программы? (Выберите все, что применимо)
+
+1: class Chicken {}
+2: interface HenHouse { public java.util.List<Chicken> getChickens(); }
+3: public class ChickenSong {
+4:   public static void main(String[] args) {
+5:     HenHouse house = ______________
+6:     Chicken chicken = house.getChickens().get(0);
+7:     for(int i=0; i<house.getChickens().size();
+8:       chicken = house.getChickens().get(i++)) {
+9:       System.out.println("Cluck");
+10: } } }
+A. Код не компилируется из-за строки 6.
+B. Код не компилируется из-за строк 7–8.
+C. Программа компилируется, но не выводит ничего.
+D. Программа выводит "Cluck" ровно один раз.
+E. Программа выводит "Cluck" более одного раза.
+F. Программа компилируется, но вызывает исключение во время выполнения.
+
+Какие из следующих операторов можно вставить в пустую строку, чтобы код успешно компилировался? (Выберите все, что применимо)
+public interface CanSwim {}
+public class Amphibian implements CanSwim {}
+class Tadpole extends Amphibian {}
+public class FindAllTadPole {
+  public static void main(String[] args) {
+    List<Tadpole> tadpoles = new ArrayList<Tadpole>();
+    for(Amphibian amphibian : tadpoles) {
+      ___________ tadpole = amphibian;
+} } }
+A. CanSwim
+B. Long
+C. Amphibian
+D. Tadpole
+E. Object
+
+Какие индивидуальные изменения, если таковые имеются, позволят следующему коду компилироваться? (Выберите все, что применимо)
+1: public interface Animal { public default String getName() { return null; } }
+2: interface Mammal { public default String getName() { return null; } }
+3: abstract class Otter implements Mammal, Animal {}
+A. Код компилируется без проблем.
+B. Удалить модификатор метода по умолчанию и реализацию метода в строке 1.
+C. Удалить модификатор метода по умолчанию и реализацию метода в строке 2.
+D. Удалить модификатор метода по умолчанию и реализацию метода в строках 1 и 2.
+E. Изменить возвращаемое значение в строке 1 с null на "Animal".
+F. Переопределить метод getName() с абстрактным методом в классе Otter.
+G. Переопределить метод getName() с конкретным методом в классе Otter.
+
+Какие из следующих строк можно вставить в строку 11, чтобы напечатать true? (Выберите все, что применимо)
+10: public static void main(String[] args) {
+11:   // INSERT CODE HERE
+12: }
+13: private static boolean test(Predicate<Integer> p) {
+14:   return p.test(5);
+15: }
+A. System.out.println(test(i -> i == 5));
+B. System.out.println(test(i -> {i == 5;}));
+C. System.out.println(test((i) -> i == 5));
+D. System.out.println(test((int i) -> i == 5);
+E. System.out.println(test((int i) -> {return i == 5;}));
+F. System.out.println(test((i) -> {return i == 5;}));
+
+Какие из следующих вариантов выводят дату, представляющую 1 апреля 2015 года? (Выберите все, что применимо)
+A. System.out.println(LocalDate.of(2015, Calendar.APRIL, 1));
+B. System.out.println(LocalDate.of(2015, Month.APRIL, 1));
+C. System.out.println(LocalDate.of(2015, 3, 1));
+D. System.out.println(LocalDate.of(2015, 4, 1));
+E. System.out.println(new LocalDate(2015, 3, 1));
+F. System.out.println(new LocalDate(2015, 4, 1));
+
+Байт-код находится в файле с каким расширением?
+A. .bytecode
+B. .bytes
+C. .class
+D. .exe
+E. .javac
+F. .java
+
+Какие из следующих исключений являются проверяемыми? (Выберите все, что применимо)
+A. Exception
+B. IllegalArgumentException
+C. IOException
+D. NullPointerException
+E. NumberFormatException
+F. StackOverflowError
