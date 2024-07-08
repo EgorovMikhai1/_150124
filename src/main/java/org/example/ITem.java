@@ -1,14 +1,18 @@
 package org.example;
 
 import java.io.Serializable;
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.Objects;
 
 public class ITem implements Comparable<ITem> {
+
     String name;
     private static String param = null;
 
 //    public ITem(String name) {
-//
+//      List<?> list = new ArrayList();
+//      List<Integer[]> list = new ArrayList();
 //    }
 
     @Override
@@ -50,10 +54,29 @@ public class ITem implements Comparable<ITem> {
     }
 
     public static void main(String[] args) {
-        new Object().equals(new ITem());
+        Deque<Integer> deque = new LinkedList<>();
+//        new Object().equals(new ITem());
+//
+//        String name = "QQQ";
+//
+//        name = "WWW";
+        int i  = 0;
+        do {
+            System.out.println("!!!!");
+            i--;
+        } while (i != 0);
 
-        String name = "QQQ";
-
-        name = "WWW";
+//        while (i > 0) {
+//
+//        }
     }
+
+    Intt intt = System.out::println;
+}
+
+@FunctionalInterface
+interface Intt {
+    void get();
+
+    boolean equals(Object o);
 }
