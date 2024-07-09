@@ -1,0 +1,17 @@
+-- Использование базы данных
+USE library;
+
+-- Создание таблицы authors
+CREATE TABLE authors (
+    author_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    birthdate DATE
+);
+
+-- Вставка данных в таблицу authors
+INSERT INTO authors (name, birthdate) VALUES
+('Leo Tolstoy', '1828-09-09'),
+('Fyodor Dostoevsky', '1821-11-11'),
+('Anton Chekhov', '1860-01-29'),
+('Alexander Pushkin', '1799-06-06'),
+('Mikhail Bulgakov', '1891-05-15');
