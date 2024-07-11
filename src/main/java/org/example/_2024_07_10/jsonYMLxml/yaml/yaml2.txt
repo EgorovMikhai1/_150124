@@ -1,0 +1,49 @@
+Скаляры:
+Скалярные типы включают строки, числа и булевы значения.
+string: "Hello, World!"
+integer: 123
+float: 123.45
+boolean: true
+
+
+Последовательности:
+Последовательности представляют собой список или массив.
+fruits:
+  - Apple
+  - Banana
+  - Orange
+
+
+Отображения:
+Отображения представляют пары ключ-значение, как в словаре.
+person1:
+  name: John Doe
+  age: 30
+  city: New York
+
+
+Узлы:
+Узел может быть скаляром, последовательностью или отображением.
+# Scalar BNode
+title: Document title
+# Sequence BNode
+chapters:
+  - Introduction
+  - Middle
+  - Conclusion
+# Mapping BNode
+attributes:
+  author: John Doe
+  pages: 250
+
+Документы:
+В одном файле YAML может быть несколько документов. Каждый документ начинается с ---.
+
+---
+document: 1
+author: John Doe
+---
+
+document: 2
+author: Jane Doe
+...

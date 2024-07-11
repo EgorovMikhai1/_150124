@@ -1,0 +1,118 @@
+university:
+  name: "Large Fictional University"
+  departments:
+    - name: "Computer Science"
+      head: "Dr. Alice Smith"
+      courses:
+        - id: "CS101"
+          title: "Introduction to Computer Science"
+          credits: 4
+          professor: "Dr. John Doe"
+          topics:
+            - "Basics of Programming"
+            - "Data Structures"
+            - "Algorithms"
+        - id: "CS102"
+          title: "Advanced Programming"
+          credits: 3
+          professor: "Dr. Emily White"
+          topics:
+            - "Object-Oriented Programming"
+            - "Design Patterns"
+        - id: "CS103"
+          title: "Data Structures and Algorithms"
+          credits: 4
+          professor: "Dr. Michael Green"
+          topics:
+            - "Advanced Data Structures"
+            - "Complexity Analysis"
+        - id: "CS104"
+          title: "Database Systems"
+          credits: 3
+          professor: "Dr. Lisa Blue"
+          topics:
+            - "Relational Databases"
+            - "SQL"
+        - id: "CS105"
+          title: "Web Development"
+          credits: 3
+          professor: "Dr. Karen Black"
+          topics:
+            - "HTML, CSS, JavaScript"
+            - "Backend Development"
+
+    - name: "Mathematics"
+      head: "Dr. Robert Brown"
+      courses:
+        - id: "MATH101"
+          title: "Calculus I"
+          credits: 4
+          professor: "Dr. Richard Davis"
+          topics:
+            - "Limits"
+            - "Derivatives"
+            - "Integrals"
+        - id: "MATH102"
+          title: "Linear Algebra"
+          credits: 3
+          professor: "Dr. Sarah Johnson"
+          topics:
+            - "Vectors and Spaces"
+            - "Matrix Transformations"
+        - id: "MATH103"
+          title: "Statistics"
+          credits: 4
+          professor: "Dr. Edward Wilson"
+          topics:
+            - "Probability"
+            - "Inferential Statistics"
+
+    - name: "Physics"
+      head: "Dr. Gary Stewart"
+      courses:
+        - id: "PHYS101"
+          title: "General Physics I"
+          credits: 4
+          professor: "Dr. Neil Adams"
+          topics:
+            - "Mechanics"
+            - "Thermodynamics"
+        - id: "PHYS102"
+          title: "General Physics II"
+          credits: 4
+          professor: "Dr. Julie Clarke"
+          topics:
+            - "Electromagnetism"
+            - "Optics"
+        - id: "PHYS103"
+          title: "Quantum Physics"
+          credits: 3
+          professor: "Dr. Omar Farooq"
+          topics:
+            - "Quantum Mechanics"
+            - "Quantum Field Theory"
+
+    - name: "History"
+      head: "Dr. Anna Petrova"
+      courses:
+        - id: "HIST101"
+          title: "World History"
+          credits: 3
+          professor: "Dr. Marco Diaz"
+          topics:
+            - "Ancient Civilizations"
+            - "Medieval History"
+        - id: "HIST102"
+          title: "American History"
+          credits: 3
+          professor: "Dr. Susan Lee"
+          topics:
+            - "Colonial America"
+            - "Modern America"
+        - id: "HIST103"
+          title: "European History"
+          credits: 3
+          professor: "Dr. Gustav Schmidt"
+          topics:
+            - "Renaissance"
+            - "Industrial Revolution"
