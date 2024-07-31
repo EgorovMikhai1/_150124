@@ -1,5 +1,6 @@
 package org.example._2024_07_09;
 
+import jakarta.persistence.criteria.CriteriaBuilder;
 import lombok.Getter;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

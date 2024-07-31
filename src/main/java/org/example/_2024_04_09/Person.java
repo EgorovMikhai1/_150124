@@ -3,6 +3,7 @@ package org.example._2024_04_09;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import org.yaml.snakeyaml.events.Event;
 
 import java.util.Objects;
 
@@ -14,6 +15,8 @@ public class Person {
     private String surName;
     private int age;
     private double salary;
+
+    private Event event;
 
     //person1-> this.equals(person2 -> o)
     @Override

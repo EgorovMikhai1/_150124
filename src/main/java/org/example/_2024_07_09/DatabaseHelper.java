@@ -8,7 +8,7 @@ public class DatabaseHelper {
     private static final String PASSWORD = "123123";
 
     private Connection connect() {
-        Connection conn = null;
+        Connection conn;
         try {
             conn = DriverManager.getConnection(URL, USER, PASSWORD);
 
